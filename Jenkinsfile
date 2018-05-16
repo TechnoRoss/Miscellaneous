@@ -23,7 +23,6 @@ pipeline {
       agent any
       steps {
         withRegistry('http://myregistry.democompany.com:5000', 'RegistryLogin'){
-          def newImage = docker.build("super-app:1${env.BUILD_ID}")
           newImage.push()
         }
       }
