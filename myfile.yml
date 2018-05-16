@@ -11,8 +11,8 @@ spec:
     spec:
       containers:
       - name: sample-k8s-app-container
-        image: myregistry.democompany.com:5000/super-app:1.${BUILD_NUMBER}
+        image: myregistry.democompany.com:5000/superapp:1.${BUILD_NUMBER}
         ports:
         - containerPort: 80
       imagePullSecrets:
-      - name: $KUBERNETES_SECRET_NAME
+      - name: regcred
