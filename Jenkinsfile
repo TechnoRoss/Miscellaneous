@@ -22,8 +22,9 @@ pipeline {
     stage('Docker Push') {
       agent any
       steps {
-        withRegistry(http://myregistry.democompany.com:5000, RegistryLogin){
-          sh "docker image push ${REGHOST}/super-app:1.${BUILD_NUMBER}"
+        docker.withRegistry('http://myregistry.democompany.com:5000', 'RegistryLogin'){
+          def newImage = docker.build("super-app:1${env.BUILD_ID}")
+          newImage.push()
         }
       }
     }
