@@ -23,7 +23,6 @@ pipeline {
       agent any
       steps {
         withRegistry(http://myregistry.democompany.com:5000, RegistryLogin){
-          sh "docker login -u ${env.RegistryLoginUser} -p ${env.RegistryLoginPassword}"
           sh "docker image push ${REGHOST}/super-app:1.${BUILD_NUMBER}"
         }
       }
