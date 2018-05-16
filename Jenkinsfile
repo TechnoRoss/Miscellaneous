@@ -4,7 +4,6 @@ pipeline {
   environment {
      REGHOST="myregistry.democompany.com:5000"
      BUILD_HOME="/var/lib/jenkins/workspace"
-     #BUILD_NUM="currentBuild.number"
   }
   agent none
   stages {
