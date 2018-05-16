@@ -1,4 +1,4 @@
-FROM python:3.6.5-slim-stretch
+FROM myregistry.democompany.com:5000/python:3.6.5-slim-stretch
 
 COPY index.html /var/html/
 WORKDIR /var/html

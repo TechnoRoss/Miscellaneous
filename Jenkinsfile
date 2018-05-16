@@ -4,7 +4,7 @@ pipeline {
   environment {
      REGHOST="myregistry.democompany.com:5000"
      BUILD_HOME="/var/lib/jenkins/workspace"
-     BUILD_NUM="currentBuild.number"
+     #BUILD_NUM="currentBuild.number"
   }
   agent none
   stages {
@@ -17,7 +17,7 @@ pipeline {
       agent any
       steps {
         sh "docker image build -t ${REGHOST}/super-app ."
-        sh "docker image tag ${REGHOST}/super-app:1.${BUILD_NUM}"
+        sh "docker image tag ${REGHOST}/super-app:1.${BUILD_NUMBER}"
       }
     }
     stage('Docker Push') {
@@ -25,7 +25,7 @@ pipeline {
       steps {
         withCredentials([usernamePassword(credentialsId: 'RegistryLogin', passwordVariable: 'RegistryLoginPassword', usernameVariable: 'RegistryLoginUser')]) {
           sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-          sh "docker image push ${REGHOST}/super-app:1.${BUILD_NUM}"
+          sh "docker image push ${REGHOST}/super-app:1.${BUILD_NUMBER}"
         }
       }
     }
