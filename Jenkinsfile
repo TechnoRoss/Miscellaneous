@@ -23,7 +23,7 @@ pipeline {
       agent any
       steps {
         withCredentials([usernamePassword(credentialsId: 'RegistryLogin', passwordVariable: 'RegistryLoginPassword', usernameVariable: 'RegistryLoginUser')]) {
-          sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
+          sh "docker login -u ${env.RegistryLoginUser} -p ${env.RegistryLoginPassword}"
           sh "docker image push ${REGHOST}/super-app:1.${BUILD_NUMBER}"
         }
       }
