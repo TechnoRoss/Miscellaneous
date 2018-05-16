@@ -22,10 +22,17 @@ pipeline {
     stage('Docker Push') {
       agent any
       steps {
-        withRegistry('http://myregistry.democompany.com:5000', 'RegistryLogin'){
-          newImage.push()
+         withCredentials([usernamePassword(credentialsId: 'RegistryLogin', passwordVariable: 'myPassword', usernameVariable: 'myUser')]) {
+          sh "docker login -u ${env.myUser} -p ${env.myPassword}"
+          sh "docker image push ${REGHOST}/super-app:latest"
+          sh "docker image push ${REGHOST}/super-app:1.${BUILD_NUMBER}"
         }
       }
     }
-  }
+    post {
+      always {
+         cleanWs()
+      }
+   }
+ }
 }
