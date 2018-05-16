@@ -25,7 +25,7 @@ pipeline {
       steps {
         withCredentials([usernamePassword(credentialsId: 'RegistryLogin', passwordVariable: 'RegistryLoginPassword', usernameVariable: 'RegistryLoginUser')]) {
           sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-          sh 'docker image push ${REGHOST}/super-app:1.${BUILD_NUM}"
+          sh 'docker image push ${REGHOST}/super-app:1.${BUILD_NUM}'
         }
       }
     }
