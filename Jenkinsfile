@@ -16,7 +16,7 @@ pipeline {
       agent any
       steps {
         sh "docker image build -t ${REGHOST}/super-app ."
-        sh "docker image tag ${REGHOST}/super-app:1.${BUILD_NUMBER}"
+        sh "docker image tag ${REGHOST}/super-app:latest ${REGHOST}/super-app:1.${BUILD_NUMBER}"
       }
     }
     stage('Docker Push') {
