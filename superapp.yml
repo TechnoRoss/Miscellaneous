@@ -13,4 +13,4 @@ spec:
       - name: superapp-app-container
         image: myregistry.democompany.com:5000/superapp:1.${BUILD_NUMBER}
         ports:
-        - containerPort: 80
+        - containerPort: 8080
