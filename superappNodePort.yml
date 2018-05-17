@@ -8,6 +8,5 @@ spec:
   - port: 8080
     targetPort: 8080
     nodePort: 32222
-    selector:
-      name: superapp
-      context: superapp-context
+  selector:
+    context: superapp-context

@@ -9,7 +9,6 @@ spec:
     metadata:
       labels:
         context: superapp-context
-        name: superapp
     spec:
       containers:
       - name: superapp-app-container
