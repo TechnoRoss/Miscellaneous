@@ -1,16 +1,16 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: sample-k8s-deployment
+  name: superapp
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: sample-k8s-app
+        app: superapp
     spec:
       containers:
-      - name: sample-k8s-app-container
+      - name: superapp-app-container
         image: myregistry.democompany.com:5000/superapp:1.${BUILD_NUMBER}
         ports:
         - containerPort: 80
