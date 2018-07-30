@@ -1,0 +1,18 @@
+version: "3.4"
+
+services:
+  jenkins:
+    image: 'technoross/sasjenkins:2.122'
+    hostname: 'myjenkins.democompany.com'
+    ports:
+      - '8080:8080'
+      - '50000:50000'
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "/home/centos/localserverdata/jenkins/data:/var/jenkins_home"
+      - "/etc/hosts:/etc/hosts:ro"
+    networks:
+      - cicd
+
+networks:
+  cicd:

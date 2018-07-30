@@ -1,0 +1,19 @@
+version: "3.4"
+
+services:
+  registry:
+    image: registry:2.6.2
+    hostname: myregistry.democompany.com
+    ports:
+      - '5000:5000'
+    volumes:
+      - "/home/centos/localserverdata/registry/data:/var/lib/registry"
+      - "/home/centos/localserverdata/registry/certs:/certs"
+      - "/home/centos/localserverdata/registry/auth:/auth"
+      - "/etc/hosts:/etc/hosts:ro"
+    networks:
+      - cicd
+
+networks:
+  cicd:
+
