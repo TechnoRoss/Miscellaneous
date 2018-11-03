@@ -1,0 +1,177 @@
+Ant Plugin (ant): 1.4
+Authentication Tokens API Plugin (authentication-tokens): 1.3
+Autofavorite for Blue Ocean (blueocean-autofavorite): 1.0.0
+Bitbucket Branch Source Plugin (cloudbees-bitbucket-branch-source): 2.2.4
+Bitbucket Pipeline for Blue Ocean (blueocean-bitbucket-pipeline): 1.2.4
+Bitbucket Plugin (bitbucket): 1.1.5
+Bitbucket Pullrequest Builder Plugin (bitbucket-pullrequest-builder): 1.4.26
+Blue Ocean (blueocean): 1.2.4
+Blue Ocean Pipeline Editor (blueocean-pipeline-editor): 1.2.4
+Branch API Plugin (branch-api): 2.0.12
+Build Keeper Plugin (build-keeper-plugin): 1.3
+Build With Parameters (build-with-parameters): 1.3
+Checkmarx Plugin (checkmarx): 8.42.0
+ChuckNorris Plugin (chucknorris): 1.1
+Common API for Blue Ocean (blueocean-commons): 1.2.4
+Compact Columns (compact-columns): 1.10
+Conditional BuildStep (conditional-buildstep): 1.3.5
+Config API for Blue Ocean (blueocean-config): 1.2.4
+Config AutoRefresh Plugin (config-autorefresh-plugin): 1.0
+Config File Provider Plugin (config-file-provider): 2.15.6
+Configuration Slicing plugin (configurationslicing): 1.47
+Copy Artifact Plugin (copyartifact): 1.38.1
+Credentials Binding Plugin (credentials-binding): 1.13
+Credentials Plugin (credentials): 2.1.16
+Crowd 2 Integration (crowd2): 1.8
+Custom Tools Plugin (custom-tools-plugin): 0.4.4
+Custom View Tabs Plugin (custom-view-tabs): 1.3
+Dashboard View (dashboard-view): 2.9.10
+Dashboard for Blue Ocean (blueocean-dashboard): 1.2.4
+Dependency Analyzer Plugin (dependencyanalyzer): 0.7
+Dependency Graph Viewer Plugin (depgraph-view): 0.11
+Deploy WebLogic Plugin (weblogic-deployer-plugin): 3.7
+Deploy to container Plugin (deploy): 1.13
+Description Column Plugin (description-column-plugin): 1.3
+Display URL API (display-url-api): 2.1.0
+Display URL for Blue Ocean (blueocean-display-url): 2.1.0
+Docker Commons Plugin (docker-commons): 1.8
+Docker Pipeline (docker-workflow): 1.13
+Durable Task Plugin (durable-task): 1.14
+Email Extension Plugin (email-ext): 2.57
+Environment File Plugin (envfile): 1.2
+Environment Injector Plugin (envinject): 1.93.1
+Events API for Blue Ocean (blueocean-events): 1.2.4
+Extended Choice Parameter Plug-In (extended-choice-parameter): 0.76
+External Monitor Job Type Plugin (external-monitor-job): 1.7
+Extra Columns Plugin (extra-columns): 1.18
+Fail The Build Plugin (fail-the-build-plugin): 1.0
+Favorite (favorite): 2.3.0
+Flexible Publish Plugin (flexible-publish): 0.15.2
+Folders Plugin (cloudbees-folder): 6.1.2
+GIT server Plugin (git-server): 1.7
+Git Pipeline for Blue Ocean (blueocean-git-pipeline): 1.2.4
+Git client plugin (git-client): 2.5.0
+Git plugin (git): 3.6.0
+GitHub API Plugin (github-api): 1.89
+GitHub Branch Source Plugin (github-branch-source): 2.2.3
+GitHub Pipeline for Blue Ocean (blueocean-github-pipeline): 1.2.4
+GitHub plugin (github): 1.28.0
+Gravatar plugin (gravatar): 2.1
+Green Balls (greenballs): 1.15
+Groovy (groovy): 1.30
+Groovy Postbuild (groovy-postbuild): 2.3.1
+HTML Publisher plugin (htmlpublisher): 1.14
+HipChat Plugin (hipchat): 2.1.1
+Hudson Post build task (postbuild-task): 1.8
+Icon Shim Plugin (icon-shim): 2.0.3
+InternetMeme Plugin (internetmeme): 1.0
+JIRA Integration for Blue Ocean (blueocean-jira): 1.2.4
+JIRA plugin (jira): 2.4.2
+JSch dependency plugin (jsch): 0.1.54.1
+JUnit Plugin (junit): 1.21
+JWT for Blue Ocean (blueocean-jwt): 1.2.4
+Jackson 2 API Plugin (jackson2-api): 2.7.3
+JavaScript GUI Lib: ACE Editor bundle plugin (ace-editor): 1.1
+JavaScript GUI Lib: Handlebars bundle plugin (handlebars): 1.1.1
+JavaScript GUI Lib: Moment.js bundle plugin (momentjs): 1.1.1
+JavaScript GUI Lib: jQuery bundles (jQuery and jQuery UI) plugin (jquery-detached): 1.2.1
+Javadoc Plugin (javadoc): 1.4
+Job Configuration History Plugin (jobConfigHistory): 2.15
+Job DSL (job-dsl): 1.65
+Job Import Plugin (job-import-plugin): 1.6
+Job Node Stalker (job-node-stalker): 1.0.6.1-SNAPSHOT (private-01/22/2018 16:30-jonathan.shelton)
+LDAP Plugin (ldap): 1.14
+MSBuild Plugin (msbuild): 1.27
+Mailer Plugin (mailer): 1.20
+Mask Passwords Plugin (mask-passwords): 2.10.1
+Matrix Authorization Strategy Plugin (matrix-auth): 1.5
+Matrix Project Plugin (matrix-project): 1.10
+Maven Integration plugin (maven-plugin): 2.15.1
+Mercurial plugin (mercurial): 2.1
+Mission Control Plugin (mission-control-view): 0.9.9
+Multi-Branch Project Plugin (DEPRECATED) (multi-branch-project-plugin): 0.7
+Multijob plugin (jenkins-multijob-plugin): 1.28
+Naginator (naginator): 1.17.2
+Nested View Plugin (nested-view): 1.14
+Next Build Number Plugin (next-build-number): 1.4
+OWASP Markup Formatter Plugin (antisamy-markup-formatter): 1.5
+OctopusDeploy Plugin (octopusdeploy): 1.7.0
+PAM Authentication plugin (pam-auth): 1.3
+Parameterized Trigger plugin (parameterized-trigger): 2.33
+Performance Plugin (performance): 3.2
+Personalization for Blue Ocean (blueocean-personalization): 1.2.4
+Pipeline Graph Analysis Plugin (pipeline-graph-analysis): 1.5
+Pipeline SCM API for Blue Ocean (blueocean-pipeline-scm-api): 1.2.4
+Pipeline implementation for Blue Ocean (blueocean-pipeline-api-impl): 1.2.4
+Pipeline: API (workflow-api): 2.22
+Pipeline: Basic Steps (workflow-basic-steps): 2.4
+Pipeline: Build Step (pipeline-build-step): 2.5.1
+Pipeline: Declarative (pipeline-model-definition): 1.2.2
+Pipeline: Declarative Agent API (pipeline-model-declarative-agent): 1.1.1
+Pipeline: Declarative Extension Points API (pipeline-model-extensions): 1.2.2
+Pipeline: Groovy (workflow-cps): 2.41
+Pipeline: Input Step (pipeline-input-step): 2.8
+Pipeline: Job (workflow-job): 2.11.2
+Pipeline: Milestone Step (pipeline-milestone-step): 1.3.1
+Pipeline: Model API (pipeline-model-api): 1.2.2
+Pipeline: Multibranch (workflow-multibranch): 2.16
+Pipeline: Multibranch with defaults (pipeline-multibranch-defaults): 1.1
+Pipeline: Nodes and Processes (workflow-durable-task-step): 2.15
+Pipeline: REST API Plugin (pipeline-rest-api): 2.9
+Pipeline: SCM Step (workflow-scm-step): 2.4
+Pipeline: Shared Groovy Libraries (workflow-cps-global-lib): 2.9
+Pipeline: Stage Step (pipeline-stage-step): 2.2
+Pipeline: Stage Tags Metadata (pipeline-stage-tags-metadata): 1.2.2
+Pipeline: Stage View Plugin (pipeline-stage-view): 2.9
+Pipeline: Step API (workflow-step-api): 2.13
+Pipeline: Supporting APIs (workflow-support): 2.14
+Plain Credentials Plugin (plain-credentials): 1.4
+Plugin Usage - Plugin (plugin-usage-plugin): 0.3
+PowerShell plugin (powershell): 1.3
+Pre SCM BuildStep Plugin (preSCMbuildstep): 0.3
+Project statistics Plugin (project-stats-plugin): 0.4
+Pub-Sub "light" Bus (pubsub-light): 1.12
+Publish Over FTP (publish-over-ftp): 1.12
+Publish Over SSH (publish-over-ssh): 1.17
+REST API for Blue Ocean (blueocean-rest): 1.2.4
+REST Implementation for Blue Ocean (blueocean-rest-impl): 1.2.4
+Resource Disposer Plugin (resource-disposer): 0.6
+Role-based Authorization Strategy (role-strategy): 2.4.0
+Run Condition Plugin (run-condition): 1.0
+SCM API Plugin (scm-api): 2.2.3
+SCM Branch PR Filter Plugin (scm-filter-branch-pr): 0.2
+SSH Agent Plugin (ssh-agent): 1.15
+SSH Credentials Plugin (ssh-credentials): 1.13
+SSH Slaves plugin (ssh-slaves): 1.13
+SSH plugin (ssh): 2.5
+SSH2 Easy Plugin (ssh2easy): 1.4
+Safe Restart Plugin (saferestart): 0.3
+Script Security Plugin (script-security): 1.34
+Server Sent Events (SSE) Gateway Plugin (sse-gateway): 1.15
+Simple Theme Plugin (simple-theme-plugin): 0.3
+SonarQube Scanner for Jenkins (sonar): 2.6.1
+Static Analysis Utilities (analysis-core): 1.86
+Structs Plugin (structs): 1.10
+TestNG Results Plugin (testng-plugin): 1.14
+Text File Operations (text-file-operations): 1.3.2
+ThinBackup (thinBackup): 1.9
+Timestamper (timestamper): 1.8.8
+Token Macro Plugin (token-macro): 2.0
+Variant Plugin (variant): 1.1
+View Job Filters (view-job-filters): 1.27
+Warnings Plug-in (warnings): 4.62
+Web for Blue Ocean (blueocean-web): 1.2.4
+White Source Jenkins plugin (whitesource): 1.8.2
+Windows Slaves Plugin (windows-slaves): 1.3.1
+Workspace Cleanup Plugin (ws-cleanup): 0.32
+bouncycastle API Plugin (bouncycastle-api): 2.16.0
+build timeout plugin (build-timeout): 1.18
+build-name-setter (build-name-setter): 1.6.5
+built-on-column (built-on-column): 1.1
+categorized-view (categorized-view): 1.10
+description setter plugin (description-setter): 1.10
+disk-usage plugin (disk-usage): 0.28
+emotional-jenkins-plugin (emotional-jenkins-plugin): 1.2
+i18n for Blue Ocean (blueocean-i18n): 1.2.4
+jQuery UI plugin (jquery-ui): 1.0.2
+jQuery plugin (jquery): 1.11.2-0

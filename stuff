@@ -1,0 +1,4 @@
+kubectl create secret docker-registry regcred \
+	 --docker-server=myreg.technoross.org:8443 \
+	 --docker-username=root --docker-password=password \
+ --docker-email=root@technoross.org
