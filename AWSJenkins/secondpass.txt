@@ -1,0 +1,32 @@
+SecurityGroups 	sg-0c5ef23b313c4e66d 	Security group for the cluster control plane communication with worker nodes
+VpcId 	vpc-0cfc9fed27b6d5860 	The VPC Id
+SubnetIds 	subnet-03627924ec881a25e,subnet-012d2813e730a710c,subnet-07ca154b0e7caa39d 	All subnets in the VPC
+
+
+
+set AWS_PROFILE=jenkins-eks
+
+
+aws eks create-cluster --name mitrajenkins2 --role-arn arn:aws:iam::285557769654:role/eks-role --resources-vpc-config subnetIds=subnet-03627924ec881a25e,subnet-012d2813e730a710c,subnet-07ca154b0e7caa39d,securityGroupIds=sg-0c5ef23b313c4e66d
+
+aws eks describe-cluster --name mitrajenkins2 --query cluster.status
+
+when active
+
+aws eks update-kubeconfig --name mitrajenkins2
+
+
+my VPC subnet is 192.168.0.0/16
+
+private subnets assigned are
+us-west-2a - 192.168.64.0/18
+us-west-2b - 192.168.128.0/18
+us-west-2c - 192.168.192.0/18
+
+so, public subnets will be:
+us-west-2a - 192.168.6.0/24
+us-west-2b - 192.168.7.0/24
+us-west-2c - 192.168.8.0/24
+
+NodeInstanceRole 	arn:aws:iam::285557769654:role/mitrajenkins2-worker-nodes-NodeInstanceRole-7XG4YP05LW5P 	The node instance role
+NodeSecurityGroup 	sg-09c105149cd020851 	The security group for the node group

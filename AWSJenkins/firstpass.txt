@@ -1,0 +1,20 @@
+EKS Setup Notes
+
+SecurityGroups 	sg-01fd815af09b642fc 	Security group for the cluster control plane communication with worker nodes
+VpcId 	vpc-0d94be3690b17cf41 	The VPC Id
+SubnetIds 	subnet-001bd96a52ef221f6,subnet-0de042750c2e1b569,subnet-01f55d49971d705c2 	All subnets in the VPC
+
+Authenticator binaries:
+
+
+    Linux: https://amazon-eks.s3-us-west-2.amazonaws.com/1.10.3/2018-07-26/bin/linux/amd64/aws-iam-authenticator
+
+    MacOS: https://amazon-eks.s3-us-west-2.amazonaws.com/1.10.3/2018-07-26/bin/darwin/amd64/aws-iam-authenticator
+
+    Windows: https://amazon-eks.s3-us-west-2.amazonaws.com/1.10.3/2018-07-26/bin/windows/amd64/aws-iam-authenticator.exe
+
+
+
+aws eks create-cluster --name jenkins-eks --role-arn arn:aws:iam::285557769654:role/eks-role --resources-vpc-config subnetIds=subnet-001bd96a52ef221f6,subnet-0de042750c2e1b569,subnet-01f55d49971d705c2,securityGroupIds=sg-01fd815af09b642fc
+
+aws eks describe-cluster --name jenkins-eks --query cluster.status
