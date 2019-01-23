@@ -1,0 +1,22 @@
+FROM jenkins/jenkins:2.149
+USER root
+RUN apt-get update \
+    && apt-get install -y \
+       apt-transport-https \
+       ca-certificates \
+       curl \
+       software-properties-common \
+    && curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - \
+    && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" \
+    && apt-get update && apt-get install -y docker-ce sudo \
+    && rm -rf /var/lib/apt/lists/*
+RUN gpasswd -a jenkins docker && gpasswd -a jenkins root
+RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
+CMD sed -i '/docker/d' /etc/group
+CMD cp /etc/group /groupbak
+COPY entrypoint.sh /
+COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/executors.groovy
+COPY myreg.technoross.org:8443.crt /usr/local/share/ca-certificates
+RUN update-ca-certificates
+COPY .kube /home/jenkins/.kube
+ENTRYPOINT /entrypoint.sh
